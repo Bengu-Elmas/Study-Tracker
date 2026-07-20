@@ -55,3 +55,9 @@ src/
 ## About
 
 This is a learning project created while I was studying JavaScript and React. My goal was to turn the concepts I learned into a small functional application and improve my understanding of React by building something from scratch.
+
+## Live Demo
+
+You can view the live version of the project here:
+
+[Live Demo](https://bengu-elmas.github.io/Study-Tracker/)
