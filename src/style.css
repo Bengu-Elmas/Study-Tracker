@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: #ead0d2;
+  color: #381315;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  width: 90%;
+  max-width: 600px;
+  padding: 40px;
+
+  background: #fff8f7;
+
+  border: 1px solid #c98f94;
+  border-radius: 20px;
+
+  box-shadow: 0 15px 40px rgba(56, 19, 21, 0.2);
+
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #381315;
+  font-size: 2.2rem;
+}
+
+.timer {
+  margin-bottom: 30px;
+
+  color: #381315;
+
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.goal {
+  padding: 25px;
+  margin: 20px 0;
+
+  background: #f8eeee;
+
+  border: 1px solid #ead0d2;
+  border-radius: 15px;
+}
+
+.goal p {
+  margin-top: 0;
+
+  color: #381315;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 5px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #6b3035;
+  color: #fff8f7;
+
+  font-size: 0.95rem;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+button:hover {
+  background: #381315;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:disabled {
+  background: #d8c1c3;
+  color: #95797c;
+
+  cursor: not-allowed;
+  transform: none;
+}
+
+input {
+  width: 180px;
+
+  padding: 10px 12px;
+  margin: 10px 5px;
+
+  background: #fff8f7;
+  color: #381315;
+
+  border: 1px solid #c98f94;
+  border-radius: 8px;
+
+  outline: none;
+}
+
+input:focus {
+  border-color: #6b3035;
+
+  box-shadow: 0 0 0 3px rgba(107, 48, 53, 0.15);
+}
+
+input::placeholder {
+  color: #ad8b8e;
+}
+
+.status {
+  min-height: 24px;
+
+  margin: 20px 0;
+
+  color: #6b3035;
+
+  font-weight: bold;
+}
+
+.sessions {
+  margin: 20px 0;
+  padding: 15px;
+
+  background: #f8eeee;
+
+  border: 1px solid #ead0d2;
+  border-radius: 15px;
+}
+
+.sessions p {
+  margin-top: 0;
+
+  color: #381315;
+  font-weight: bold;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controls button {
+  min-width: 100px;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 25px 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  input {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .goal button {
+    width: calc(50% - 12px);
+  }
+
+  .controls button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
