@@ -1,16 +1,57 @@
-# React + Vite
+# Study Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Study Tracker is a small React project I developed while learning and practicing JavaScript and React.
 
-Currently, two official plugins are available:
+The main purpose of this project was to improve my understanding of React concepts such as `useState`, `useEffect`, component-based structure, props, conditional rendering, and working with `localStorage`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+* Start, pause, and reset the study timer
+* Display study time in `MM:SS` format
+* Set predefined study goals
+* Set a custom study goal
+* Automatically stop the timer when the selected goal is reached
+* Track completed study sessions
+* Reset completed session count
+* Save study time, study goal, and completed sessions using `localStorage`
+* Dynamically update the browser tab title based on the current study status
+* Responsive and simple user interface
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Built With
 
-## Expanding the ESLint configuration
+* React
+* JavaScript
+* HTML
+* CSS
+* Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## What I Learned
+
+While developing this project, I practiced:
+
+* Managing state with `useState`
+* Using `useEffect` and dependency arrays
+* Cleaning up intervals with `clearInterval`
+* Working with multiple React components
+* Passing data and functions between components using props
+* Conditional rendering
+* Saving and retrieving data with `localStorage`
+* Formatting time values
+* Organizing a React project into reusable components
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── GoalSelector.jsx
+│   ├── SessionStats.jsx
+│   ├── TimerControls.jsx
+│   └── TimerDisplay.jsx
+├── main.jsx
+└── style.css
+```
+
+## About
+
+This is a learning project created while I was studying JavaScript and React. My goal was to turn the concepts I learned into a small functional application and improve my understanding of React by building something from scratch.
